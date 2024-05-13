@@ -30,7 +30,7 @@ def is_valid_commit_line(line):
 
 def get_top_contributors(input_file='commits.txt', output_file='result.txt'):
     """
-    Формирует отчет о топ-3 контрибьютерах на основе данных о коммитах.
+    Формирует топ-3 контрибьютера на основе данных о коммитах.
     """
     try:
         # Чтение данных из файла
