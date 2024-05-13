@@ -19,9 +19,9 @@ def is_valid_commit_line(line):
     if not commit_hash.isalnum() or len(commit_hash) != 7:
         return False
 
-    # Проверяем, что commit_date имеет правильный формат "YYYY-MM-ddTHH:mm:ss.f"
+    # Проверяем, что commit_date имеет правильный формат "YYYY-MM-ddTHH:mm:ss"
     try:
-        datetime.datetime.strptime(commit_date, '%Y-%m-%dT%H:%M:%S.%f')
+        datetime.datetime.strptime(commit_date, '%Y-%m-%dT%H:%M:%S')
     except ValueError:
         return False
 
